@@ -11,8 +11,6 @@ const App = () => {
     const API_URL = "https://api.openai.com/v1/chat/completions";
     const API_KEY = process.env.REACT_APP_OPEN_AI;
 
-    console.log(API_KEY);
-
     const parameters = `Generate some random elements with random background color, pretty complex. Always generate groun and sky. Only use native a-frames. Style it like so: ${input}`;
 
     // Construct object
@@ -20,7 +18,7 @@ const App = () => {
       {
         role: "system",
         content:
-          "You are a world-class a-frame HTML generator. Surround your response with <a-scene> tags.",
+          "You are an a-frame HTML generator. Surround your response with <a-scene> tags.",
       },
       {
         role: "user",

@@ -1,29 +1,24 @@
 import React, { useState } from 'react';
 
-const Form = () => {
-  const [inputValue, setInputValue] = useState('');
-
-  const handleInputChange = (event) => {
-    setInputValue(event.target.value);
-  };
+function Form({ onSubmit, onInputChange, input }) {
+  const [parameters, setParameters] = useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log('Form Submitted with value:', inputValue);
+    onSubmit(parameters);
   };
 
   return (
-    // Form component work here:
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="form-style">
       <input
         type="text"
-        value={inputValue}
-        onChange={handleInputChange}
-        placeholder="Type something..."
+        value={input}
+        onChange={(e) => onInputChange(e.target.value)} 
+        placeholder="Describe your world..."
       />
-      <button type="submit">Submit</button>
+      <button type="submit">Generate</button>
     </form>
   );
-};
+}
 
 export default Form;

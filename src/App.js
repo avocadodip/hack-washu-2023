@@ -11,7 +11,7 @@ const App = () => {
     const API_URL = "https://api.openai.com/v1/chat/completions";
     const API_KEY = process.env.REACT_APP_OPEN_AI;
 
-    const parameters = `Generate some random elements with random background color. Always generate groun and sky. Only use native a-frames. The scene should follow this description? ${input}. Generate 20 a-frames. Unless otherwise stated, the world should be naturalistic (trees, river, etc.)`;
+    const parameters = `Generate some random elements with random background color. Always generate ground and sky. Only use native a-frames. The scene should follow this description? ${input}. Generate 20 a-frames. Unless otherwise stated, the world should be naturalistic (trees, river, etc.)`;
 
     // Construct object
     const messages = [

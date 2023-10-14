@@ -1,12 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const World = () => {
-
-
+function World({ html }) {
   return (
-    // World work here:
-    <main></main>
+    <div dangerouslySetInnerHTML={{ __html: html }} />
   );
-};
+}
 
 export default World;

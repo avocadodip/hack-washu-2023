@@ -76,7 +76,7 @@ export default function Modal() {
           
           <DialogContent dividers>
             <Typography gutterBottom sx={{mb:3}}> 
-              Welcome to Wrld Bldr, <span className="blue">your personalized 3D world builder!</span>
+              Welcome! <span className="blue">Wrld Bldr</span> let's you build AI-generated 3D worlds.
             </Typography>
             <Typography gutterBottom sx={{mb:3}}>
               Try these out:
@@ -100,7 +100,7 @@ export default function Modal() {
             Explore using mouse/trackpad and arrow keys.
             </Typography>
             <Typography gutterBottom >
-              Happy creating, we hope you enjoy!
+              Happy creating, enjoy!
             </Typography>
           </DialogContent>
           <DialogActions>

@@ -16,7 +16,7 @@
 
   background: rgba(0, 0, 0, 0.3);
   padding:10px;
-  width: 600px;
+  width: 50%;
   border-radius: 5px;
   z-index: 1000; /* 
   This will ensure the form stays on top */

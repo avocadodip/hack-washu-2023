@@ -66,8 +66,9 @@ export default function Modal() {
         <IconButton
           aria-label="close"
           onClick={handleClose}
+
         >
-          <CloseIcon />
+  <CloseIcon />
         </IconButton>
       </Grid>
     </Grid>
@@ -78,8 +79,7 @@ export default function Modal() {
               Welcome to Wrld Bldr, <span className="blue">your personalized 3D world builder!</span>
             </Typography>
             <Typography gutterBottom sx={{mb:3}}>
-              Use the text field below to enter in your preferences for your world. Feel free to use our recommendations or experiment with your own. Explore your world using your mouse/trackpad and arrow keys.
-              Try typing these:
+              Try these out:
                forest,
                         pyramid,
                         checkerboard,
@@ -94,7 +94,10 @@ export default function Modal() {
                       dream,
                        volcano,
                         starry,
-                        osiris.
+                        osiris
+            </Typography>
+            <Typography gutterBottom sx={{mb:3}} >
+            Explore using mouse/trackpad and arrow keys.
             </Typography>
             <Typography gutterBottom >
               Happy creating, we hope you enjoy!

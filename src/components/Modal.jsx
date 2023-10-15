@@ -76,7 +76,7 @@ export default function Modal() {
           
           <DialogContent dividers>
             <Typography gutterBottom sx={{mb:3}}> 
-              Welcome! <span className="blue">Wrld Bldr</span> let's you build AI-generated 3D worlds.
+              Welcome to <span className="blue">Wrld Bldr</span>! Use AI to generate custom 3D worlds.
             </Typography>
 
             <Typography gutterBottom sx={{mb:3}} >

@@ -4,7 +4,17 @@ import World from "../src/components/World";
 import "./App.css";
 
 const App = () => {
-  const [html, setHtml] = useState("");
+  const [html, setHtml] = useState(`
+    <a-scene>
+      <a-assets>
+        <img id="skyTexture" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg" />
+        <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg" />
+      </a-assets>
+      <a-sky src="#skyTexture"></a-sky>
+      <a-light type="ambient" color="#445451"></a-light>
+      <a-light type="point" intensity="2" position="2 4 4"></a-light>
+    </a-scene>
+  `);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
 

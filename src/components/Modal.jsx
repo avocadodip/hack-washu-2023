@@ -24,7 +24,7 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
 }));
 
 export default function Modal() {
-    const [open, setOpen] = React.useState(false);
+    const [open, setOpen] = React.useState(true);
   
     const handleClickOpen = () => {
       setOpen(true);

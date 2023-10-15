@@ -3,6 +3,7 @@
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  
 }
 
 .form-style {
@@ -10,9 +11,10 @@
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
+  
 
 
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.3);
   padding:10px;
   width: 600px;
   border-radius: 5px;
@@ -44,12 +46,22 @@ input {
   border-radius: 4px;
   box-sizing: border-box;
   font-size: 16px;
+
 }
 
 .front{
   z-index: 1000;
 }
 
+.blue{
+  color: royalblue;
+  font-weight: bold;
+}
+
+.bolder-blue{
+  color: royalblue;
+  font-weight: 800; 
+}
 
 
 

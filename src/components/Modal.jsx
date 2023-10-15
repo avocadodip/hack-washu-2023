@@ -78,8 +78,12 @@ export default function Modal() {
             <Typography gutterBottom sx={{mb:3}}> 
               Welcome! <span className="blue">Wrld Bldr</span> let's you build AI-generated 3D worlds.
             </Typography>
+
+            <Typography gutterBottom sx={{mb:3}} >
+            <span className="blue">Explore using mouse/trackpad and arrow keys.</span>
+            </Typography>
             <Typography gutterBottom sx={{mb:3}}>
-              Try these out:
+              Try these prompts out!
                forest,
                         pyramid,
                         checkerboard,
@@ -96,12 +100,10 @@ export default function Modal() {
                         starry,
                         osiris
             </Typography>
-            <Typography gutterBottom sx={{mb:3}} >
-            Explore using mouse/trackpad and arrow keys.
-            </Typography>
             <Typography gutterBottom >
               Happy creating, enjoy!
             </Typography>
+            
           </DialogContent>
           <DialogActions>
             <Button autoFocus onClick={handleClose}>

@@ -1,23 +1,11 @@
 import React, { useState } from "react";
 import Form from "../src/components/Form";
 import World from "../src/components/World";
-<<<<<<< Updated upstream
-=======
 import "./App.css";
->>>>>>> Stashed changes
 
 const App = () => {
   const [html, setHtml] = useState("");
   const [input, setInput] = useState("");
-<<<<<<< Updated upstream
-
-  // Generates HTML
-  const handleSubmit = async () => {
-    const API_URL = "https://api.openai.com/v1/chat/completions";
-    const API_KEY = process.env.REACT_APP_OPEN_AI;
-
-    const parameters = `Generate some random elements with random background color. Always generate ground and sky. Only use native a-frames. The scene should follow this description? ${input}. Generate 20 a-frames. Unless otherwise stated, the world should be naturalistic (trees, river, etc.)`;
-=======
   const [loading, setLoading] = useState(false);
 
   // Generates HTML
@@ -67,18 +55,12 @@ const App = () => {
                   <a-entity environment="preset: [PRESET-SELECTION]; dressingAmount: [DRESSING-AMOUNT]"></a-entity>
               </a-scene>
                     `;
->>>>>>> Stashed changes
 
     // Construct object
     const messages = [
       {
         role: "system",
-<<<<<<< Updated upstream
-        content:
-          "You are an a-frame HTML generator. Surround your response with <a-scene> tags.",
-=======
         content: userDescription,
->>>>>>> Stashed changes
       },
       {
         role: "user",
@@ -109,22 +91,6 @@ const App = () => {
     console.log(generatedHtml);
   };
 
-<<<<<<< Updated upstream
-  const handleInputChange = (newValue) => {
-    setInput(newValue);
-  };
-
-  return (
-    <div className="App">
-      <Form
-        onSubmit={handleSubmit}
-        input={input}
-        setInput={setInput}
-        onInputChange={handleInputChange}
-      />
-      <World html={html} />
-    </div>
-=======
   return (
     <>
       <div className="App">
@@ -138,7 +104,6 @@ const App = () => {
         <World html={html} />
       </div>
     </>
->>>>>>> Stashed changes
   );
 };
 

@@ -1,20 +1,57 @@
+
 .App {
   position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  background-color: lightblue;
 }
 
 .form-style {
   position: absolute;
   bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 20px;
+
   background: rgba(255, 255, 255, 0.7);
   padding: 10px;
+  width:1000px;
   border-radius: 5px;
-  z-index: 1000; /* This will ensure the form stays on top */
+  z-index: 1000; /* 
+  This will ensure the form stays on top */
+
+  display: grid;
+  grid-template-rows: 1fr 1fr; /* Two equal-width columns */
+  gap: 1px; /* Gap between grid items */
+  margin: 0 auto; 
 }
+
+button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5%;
+  width: 100%;
+
+
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.front{
+  z-index: 1000;
+}
+
+
 
 
 
